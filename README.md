@@ -30,7 +30,7 @@ This is a **problem hypothesis**. I did not run interviews for this concept, so 
 | 03 Structure | Sitemap and the user flow from bio link to booking |
 | 04 Wireframe | Three hero options, then low-fi desktop and phone pages |
 | 05 Design | High-fidelity desktop and phone designs, then built the site |
-| 06 Test | Wrote a usability test plan (not yet run) |
+| 06 Test | Usability test with 5 participants, in progress |
 
 ## 01 Discover
 
@@ -100,6 +100,14 @@ Warm and relaxed: deep forest green, soft linen and honey tones, flowing curves 
 
 ![Gallery filtered to 4C](docs/screenshots/gallery-filter.png)
 
+**Photos and sample content**
+
+The studio is fictional, so there was no real portfolio of work to show. The photos are AI-generated placeholders, which a real stylist's work would replace. The site says so in its footer.
+
+I checked every gallery photo against the curl type it's filed under, and that check mattered. The first 4A photo I generated showed long, glossy spiral ringlets. I have 4A hair, and my hair has never looked like that. If a 4A visitor filtered for her pattern and saw that photo, she would get the same message Instagram gives her: this stylist's work isn't for hair like mine. I regenerated it until it matched real 4A texture, and reworked the 4B and 4C photos for the same reason, since the generator kept defaulting to defined, glossy curls. The takeaway for a real build: photo accuracy is a core part of this design, and it needs to be checked by people with that hair type.
+
+For testing, I also replaced the price, time and policy placeholders with realistic sample content, so participants could complete every task.
+
 **Accessibility choices**
 
 - Semantic landmarks, a skip link, and visible focus styles
@@ -108,7 +116,7 @@ Warm and relaxed: deep forest green, soft linen and honey tones, flowing curves 
 - Every text color meets WCAG AA contrast (4.5:1 or better) against its background
 - Reduced motion respected
 
-## 06 Test plan (planned, not yet run)
+## 06 Usability test (in progress)
 
 A moderated, remote test of the phone design with **5 people with 3A to 4C hair** who book salon services at least twice a year. Measures: task success, time on task, and a 1 to 7 ease rating.
 
@@ -116,17 +124,20 @@ A moderated, remote test of the phone design with **5 people with 3A to 4C hair*
 | --- | --- | --- |
 | 1 | "In your own words, who is this stylist for?" | Mentions curly or coily hair and Charlotte within 10 seconds |
 | 2 | "Find work on hair like yours." | Uses the gallery filter without help |
+| 2+ | "If you liked one of these styles, what would you book to get it?" | Names a service with confidence |
 | 3 | "You're new. What would you book, and what will it cost?" | Picks the consultation and states its price and time |
 | 4 | "How should you show up to your appointment?" | Finds the prep answer in the FAQ |
 | 5 | "Book your first visit." | Taps Book a visit in under a minute |
 
-**What would change the design:** if 2 or more of 5 miss the gallery filter, move it higher. If prices surprise people, add a "starting at" line near the top.
+**What would change the design:** if 2 or more of 5 miss the gallery filter, move it higher. If prices surprise people, add a "starting at" line near the top. If 2 or more can't tell which service creates a style in the gallery, link gallery photos to services.
+
+A practice run before the real sessions raised that last question, so I added task 2+ to test it with real people.
 
 ## What I'd do next
 
-- Run the usability test and replace the assumptions with findings
+- Finish the usability test and replace the assumptions with findings
 - Interview a working stylist about her booking and DM workload
-- Swap placeholder photos for licensed images or a real stylist's work
+- Replace the AI-generated photos with a real stylist's work
 
 ## Built with
 
@@ -136,6 +147,8 @@ HTML, CSS and a small amount of vanilla JavaScript. No frameworks or build step.
 index.html        page markup
 css/styles.css    all styles
 js/gallery.js     gallery filter
+js/booking.js     Book a visit confirmation (concept only)
+images/           AI-generated placeholder photos
 docs/screenshots  images used in this README
 ```
 
@@ -143,4 +156,4 @@ To run it locally, open `index.html` in a browser.
 
 ---
 
-*Helix & Hue Studio is a fictional business created for this concept. Bracketed text such as [PRICE] marks content a real client would supply.*
+*Helix & Hue Studio is a fictional business created for this concept. Photos are AI-generated placeholders, and prices and policies are sample content. Bracketed text marks content a real client would supply.*
