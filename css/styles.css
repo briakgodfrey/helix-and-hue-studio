@@ -369,6 +369,9 @@ em.accent { color: var(--accent); }
   line-height: 1.45;
 }
 .shot[hidden] { display: none; }
+.shot:has(img) { position: relative; }
+.shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.shot:has(img) b { position: relative; margin-top: auto; }
 .shot span { flex: 1 1 auto; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
 .shot b {
   align-self: flex-start;
@@ -476,6 +479,8 @@ em.accent { color: var(--accent); }
 .visit { background: var(--accent); color: var(--forest); }
 .visit .section { padding-bottom: 104px; align-items: start; }
 .visit .display em { font-family: var(--font-serif); }
+.booking-note { margin: 4px 0 0; max-width: 34ch; font-size: 16px; font-weight: 600; line-height: 1.5; color: var(--forest); }
+.booking-note:empty { display: none; }
 .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px; }
 .info { padding: 28px; border-radius: var(--radius); background: var(--linen); display: flex; flex-direction: column; gap: 10px; }
 .info .eyebrow { font-size: 13px; letter-spacing: 0.12em; }

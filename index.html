@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/gallery.js" defer></script>
+  <script src="js/booking.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -104,17 +105,17 @@
         </div>
         <p class="sr-only" aria-live="polite" id="gallery-status"></p>
         <ul class="gallery" role="list">
-          <li class="shot t1" data-type="3A"><span>[Photo: 3A, wash and go, fresh cut]</span><b>3A</b></li>
-          <li class="shot t2" data-type="3B"><span>[Photo: 3B, defined ringlets, diffused]</span><b>3B</b></li>
-          <li class="shot t3" data-type="3C"><span>[Photo: 3C, curly cut, before and after]</span><b>3C</b></li>
-          <li class="shot t4" data-type="4A"><span>[Photo: 4A, twist out on day two]</span><b>4A</b></li>
-          <li class="shot t5" data-type="4B"><span>[Photo: 4B, braid out with volume]</span><b>4B</b></li>
-          <li class="shot t6" data-type="4C"><span>[Photo: 4C, shaped cut on a full crown]</span><b>4C</b></li>
+          <li class="shot t1" data-type="3A"><img src="images/gallery/3a-1.jpg" alt="Long, loose 3A curls styled as a wash and go" width="900" height="1200" loading="lazy" decoding="async"><b>3A</b></li>
+          <li class="shot t2" data-type="3B"><img src="images/gallery/3b-1.jpg" alt="Springy 3B ringlets, defined and diffused" width="279" height="349" loading="lazy" decoding="async"><b>3B</b></li>
+          <li class="shot t3" data-type="3C"><img src="images/gallery/3c-1.jpg" alt="Dense 3C corkscrew curls in a rounded curly cut" width="282" height="282" loading="lazy" decoding="async"><b>3C</b></li>
+          <li class="shot t4" data-type="4A"><img src="images/gallery/4a-1.jpg" alt="Defined 4A coils in a day-two twist out" width="230" height="383" loading="lazy" decoding="async"><b>4A</b></li>
+          <li class="shot t5" data-type="4B"><img src="images/gallery/4b-1.jpg" alt="A full, fluffy 4B braid out with volume" width="282" height="352" loading="lazy" decoding="async"><b>4B</b></li>
+          <li class="shot t6" data-type="4C"><img src="images/gallery/4c-1.jpg" alt="A shaped, tapered cut on a full 4C crown" width="279" height="372" loading="lazy" decoding="async"><b>4C</b></li>
           <li class="shot t1" data-type="3B"><span>[Photo: 3B, deep treatment results]</span><b>3B</b></li>
-          <li class="shot t2" data-type="3A"><span>[Photo: 3A, layered shape, air dried]</span><b>3A</b></li>
-          <li class="shot t3" data-type="4C"><span>[Photo: 4C, coil definition set]</span><b>4C</b></li>
-          <li class="shot t4" data-type="3C"><span>[Photo: 3C, big curly volume]</span><b>3C</b></li>
-          <li class="shot t5" data-type="4A"><span>[Photo: 4A, wash and go, tapered sides]</span><b>4A</b></li>
+          <li class="shot t2" data-type="3A"><img src="images/gallery/3a-2.jpg" alt="Long 3A curls with soft layers, air dried" width="271" height="339" loading="lazy" decoding="async"><b>3A</b></li>
+          <li class="shot t3" data-type="4C"><img src="images/gallery/4c-2.jpg" alt="Short 4C hair after a coil definition set" width="272" height="272" loading="lazy" decoding="async"><b>4C</b></li>
+          <li class="shot t4" data-type="3C"><img src="images/gallery/3c-2.jpg" alt="Big, voluminous 3C curls worn loose" width="230" height="383" loading="lazy" decoding="async"><b>3C</b></li>
+          <li class="shot t5" data-type="4A"><img src="images/gallery/4a-2.jpg" alt="A 4A wash and go with tapered sides" width="272" height="340" loading="lazy" decoding="async"><b>4A</b></li>
           <li class="shot t6" data-type="4B"><span>[Photo: 4B, stretched twist out]</span><b>4B</b></li>
         </ul>
         <a class="btn btn-outline center" href="#">More on Instagram</a>
@@ -190,10 +191,11 @@
           <h2 class="display display-sm">Come through, <em>Charlotte.</em></h2>
           <p class="lede lede-dark">Book online in a couple of minutes. First time? Choose the consultation and we will plan the rest together.</p>
           <div class="btn-row">
-            <a class="btn btn-dark" href="#">Book a visit
+            <a class="btn btn-dark" href="#visit" data-book>Book a visit
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="btn btn-outline" href="#gallery">See the work</a>
           </div>
+          <p class="booking-note" id="booking-note" role="status" aria-live="polite"></p>
         </div>
         <div class="info-grid">
           <div class="info"><span class="eyebrow">Find us</span><p>[Street address]<br>[Neighborhood], Charlotte, NC [ZIP]</p></div>
@@ -207,7 +209,7 @@
 
   <footer class="site-footer container">
     <span class="brand-sm">Helix &amp; Hue Studio</span>
-    <span>Curly and coily hair care in Charlotte, NC. A sample design concept, not a real business.</span>
+    <span>Curly and coily hair care in Charlotte, NC. A sample design concept, not a real business. Gallery photos are AI-generated placeholders.</span>
     <a href="#top">Back to top</a>
   </footer>
 </body>
