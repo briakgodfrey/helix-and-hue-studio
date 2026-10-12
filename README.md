@@ -12,14 +12,14 @@ Designing a site that turns Instagram curiosity into booked, prepared first-time
 
 ## The problem
 
-> People with curly and coily hair can't tell from a stylist's Instagram whether she works with their pattern, what it costs, or how to prepare. So they send a DM, wait, or book somewhere else.
+> People with curly and coily hair can't tell from a stylist's Instagram whether the stylist works with their pattern, what it costs, or how to prepare. So they send a DM, wait, or book somewhere else.
 
 This is a **problem hypothesis**. I did not run interviews for this concept, so every user-facing claim below is labeled as an assumption to test.
 
 **Goals**
 
 - **Clients:** see work on hair like theirs, know the price and time, and book in a few taps.
-- **Stylist:** answer fewer repeat DMs, get prepared first-timers, and give her work a home beyond the Instagram grid.
+- **Stylist:** answer fewer repeat DMs, get prepared first-timers, and give their work a home beyond the Instagram grid.
 
 ## Process
 
@@ -38,10 +38,10 @@ This is a **problem hypothesis**. I did not run interviews for this concept, so 
 
 | Assumption | How I'd validate it |
 | --- | --- |
-| New clients find her on Instagram, on a phone | Ask the stylist; check bio link clicks |
+| New clients find the stylist on Instagram, on a phone | Ask the stylist; check bio link clicks |
 | Clients want proof on hair like theirs | Ask 5 people with 3A to 4C hair what convinced them to book their last stylist |
 | Hidden prices cause drop-off | Ask whether they've skipped a stylist who didn't list prices |
-| The same questions fill her DMs | Ask the stylist for her five most repeated questions |
+| The same questions fill the stylist's DMs | Ask the stylist for their five most repeated questions |
 | Many people don't know their curl type | Ask test participants their type before and after using the page |
 
 ### Competitive audit
@@ -72,7 +72,7 @@ Jasmine's assumed journey dips lowest at **evaluation**: scrolling the grid, she
 
 ## 03 Structure
 
-A **single scrolling page**, ordered by the questions a new client asks: *Is this for me? Is she good with hair like mine? What does it cost? How do I book?*
+A **single scrolling page**, ordered by the questions a new client asks: *Is this for me? Are they good with hair like mine? What does it cost? How do I book?*
 
 Hero → Hair types → Gallery → Services → The studio → FAQ → Visit
 
@@ -84,7 +84,7 @@ I sketched three hero layouts:
 
 - **A, split (chosen):** headline and Book button first, curly portrait beside it. Stacks cleanly on a phone.
 - **B, full-bleed photo:** dramatic, but text over photos is hard to read on phones and depends on one perfect image.
-- **C, type-first:** names the curl types right away, but asks people to self-identify before they trust her.
+- **C, type-first:** names the curl types right away, but asks people to self-identify before they trust the stylist.
 
 **Decision:** A for the hero, with C's type strip moved to the next section. Then I built low-fi grayscale wireframes for desktop and phone, starting with the phone.
 
@@ -104,7 +104,7 @@ Warm and relaxed: deep forest green, soft linen and honey tones, flowing curves 
 
 The studio is fictional, so there was no real portfolio of work to show. The photos are AI-generated placeholders, which a real stylist's work would replace. The site says so in its footer.
 
-I checked every gallery photo against the curl type it's filed under, and that check mattered. The first 4A photo I generated showed long, glossy spiral ringlets. I have 4A hair, and my hair has never looked like that. If a 4A visitor filtered for her pattern and saw that photo, she would get the same message Instagram gives her: this stylist's work isn't for hair like mine. I regenerated it until it matched real 4A texture, and reworked the 4B and 4C photos for the same reason, since the generator kept defaulting to defined, glossy curls. The takeaway for a real build: photo accuracy is a core part of this design, and it needs to be checked by people with that hair type.
+I checked every gallery photo against the curl type it's filed under, and that check mattered. The first 4A photo I generated showed long, glossy spiral ringlets. I have 4A hair, and my hair has never looked like that. If a 4A visitor filtered for their pattern and saw that photo, they would get the same message Instagram gives them: this stylist's work isn't for hair like mine. I regenerated it until it matched real 4A texture, and reworked the 4B and 4C photos for the same reason, since the generator kept defaulting to defined, glossy curls. The takeaway for a real build: photo accuracy is a core part of this design, and it needs to be checked by people with that hair type.
 
 For testing, I also replaced the price, time and policy placeholders with realistic sample content, so participants could complete every task.
 
@@ -136,7 +136,7 @@ A practice run before the real sessions raised that last question, so I added ta
 ## What I'd do next
 
 - Finish the usability test and replace the assumptions with findings
-- Interview a working stylist about her booking and DM workload
+- Interview a working stylist about their booking and DM workload
 - Replace the AI-generated photos with a real stylist's work
 
 ## Built with
